@@ -1,0 +1,67 @@
+.doctor-sidebar {
+    width: 280px;
+    background: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.doctor-avatar-large {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #2d6a4f, #1b4d3e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: #495057;
+    transition: all 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+    background: #f8f9fa;
+    color: #2d6a4f;
+}
+
+.sidebar-link.active {
+    background: #e8f5e9;
+    color: #2d6a4f;
+    border-left-color: #2d6a4f;
+}
+
+.sidebar-icon {
+    font-size: 18px;
+    width: 24px;
+}
+
+@media (max-width: 768px) {
+    .doctor-sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+    
+    .doctor-sidebar.open {
+        transform: translateX(0);
+    }
+}

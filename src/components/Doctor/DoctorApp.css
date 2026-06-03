@@ -1,0 +1,42 @@
+.doctor-app {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.doctor-sidebar-wrapper {
+    width: 280px;
+    position: fixed;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.doctor-main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .doctor-sidebar-wrapper {
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+    
+    .doctor-sidebar-wrapper.open {
+        transform: translateX(0);
+    }
+    
+    .doctor-main-content {
+        margin-left: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+}
