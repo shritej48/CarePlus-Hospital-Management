@@ -1,16 +1,64 @@
-# React + Vite
+# 🏥 CarePlus – Hospital Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/shritej48/CarePlus-Hospital-Management)
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**CarePlus** is a full‑stack web‑based hospital management system designed to digitize and streamline healthcare operations. It provides three distinct role‑based portals – **Admin**, **Doctor**, and **Patient** – each with customised dashboards and functionalities. The system enables online appointment booking, electronic prescription management, patient medical record access, doctor profile management, and administrative oversight.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👨‍⚕️ Admin Portal
+- Dashboard with real‑time statistics (total doctors, patients, today’s appointments)
+- Manage doctors (add/edit/delete with image upload & auto‑generated password)
+- Manage patients (view, search, delete)
+- Manage appointments (view all, create, cancel)
+- **Database Viewer** – browse any table with search, pagination & CSV export
+- Analytics (revenue trends, top doctors, appointment status breakdown)
 
-## Expanding the ESLint configuration
+### 👨‍🏥 Doctor Portal
+- View assigned appointments (confirm / cancel)
+- Write, edit & delete electronic prescriptions
+- View patient list and medical records (prescriptions)
+- Edit own profile & change password
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 Patient Portal
+- Register & login
+- Book appointments (dynamic time slots – past times disabled)
+- Cancel upcoming appointments
+- View prescription history & medical records
+- Edit profile & change password
+
+### 🌍 Public Home Page
+- Hero section with statistics counter
+- List of doctors (fetched from backend)
+- Departments, facilities, testimonials, contact form
+- Contact messages saved to database
+
+## 🛠️ Technology Stack
+
+| Layer       | Technology |
+|-------------|------------|
+| **Frontend** | React 18, Vite, Bootstrap, Tailwind CSS, Framer Motion, Chart.js |
+| **Backend**  | Spring Boot 3.3.5, Spring Data JPA, Hibernate, MySQL Driver |
+| **Database** | MySQL 8.0 |
+| **Build Tools** | Maven (backend), npm (frontend) |
+| **APIs**     | RESTful JSON over HTTP |
+| **Security** | BCrypt password encoding, role‑based routing |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 17+
+- Node.js 18+
+- MySQL 8.0+
+- Git
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/shritej48/CarePlus-Hospital-Management.git
+cd CarePlus-Hospital-Management
